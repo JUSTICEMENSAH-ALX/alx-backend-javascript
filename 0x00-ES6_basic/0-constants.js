@@ -1,34 +1,15 @@
-// Original code:
-function taskFirst() {
-  var x = "Hello";
-  var y = "World";
-  console.log(x + " " + y);
+export function taskFirst() {
+  const task = 'I prefer const when I can.';
+  return task;
 }
 
-// Modified code using const:
-function taskFirst() {
-  const x = "Hello";
-  const y = "World";
-  console.log(x + " " + y);
+export function getLast() {
+  return ' is okay';
 }
 
-// Original code:
-function taskNext() {
-  var x = 1;
-  if (true) {
-    var x = 2;
-    console.log(x); // outputs 2
-  }
-  console.log(x); // outputs 2
-}
+export function taskNext() {
+  let combination = 'But sometimes let';
+  combination += getLast();
 
-// Modified code using let:
-function taskNext() {
-  let x = 1;
-  if (true) {
-    let x = 2;
-    console.log(x); // outputs 2
-  }
-  console.log(x); // outputs 1
+  return combination;
 }
-
