@@ -1,4 +1,4 @@
-/ Groceries List
+// Groceries List
 
 const groceriesList = () => {
   const fruits = new Map([
@@ -12,4 +12,4 @@ const groceriesList = () => {
   return fruits;
 };
 
-export default groceriesList;;
+export default groceriesList;
